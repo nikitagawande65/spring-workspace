@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- DataBase Connection is Created -->
+<!-- 
+SingleConnectionDataSource connection = new SingleConnectionDataSource()
+connection.setDriverClassName("org.h2.driver")
+connection.setUrl("jdbc:h2:mem:testdb")
+connection.setUserName("sa")
+ -->
+<bean id="connection" class="org.springframework.jdbc.datasource.SingleConnectionDataSource">
+<property name="driverClassName" value="org.h2.Driver"></property>
+<property name="url" value="jdbc:h2:~/testdb"></property>
+<property name="username" value="sa"></property>
+</bean>
+
+<bean id="connection1" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+<property name="driverClassName" value="org.h2.Driver"></property>
+<property name="url" value="jdbc:h2:~/testdb"></property>
+<property name="username" value="sa"></property>
+</bean>
+
+<!-- Injecting Connection into SalesDataService -->
+<!-- Constructor based injection -->
+<!--
+SalesDataService dataService = new SalesDataService(connection) 
+ -->
+<bean id="salesDataService" class="com.myapp.spring.dao.SalesDataService" autowire="constructor">
+<!--  <constructor-arg ref="connection"></constructor-arg>-->
+</bean>
+
+<!-- Injecting SalesDataService into GetSaleCommand  -->
+<!-- Setter based Injection -->
+<!--
+GetSaleCommand getSalesCommand = new GetSaleCommand()
+ getSalesCommand.setDataService(salesDataService)
+ -->
+<bean id="getSalesCommand" class="com.myapp.spring.application.GetSaleCommand" 
+init-method="initialize" destroy-method="destroy" scope="prototype" autowire="byType">
+<!--
+<property name="dataServices" ref="salesDataService"></property>
+-->
+</bean>
+
+<bean id="getSalesCommand1" class="com.myapp.spring.application.GetSaleCommand">
+<property name="dataServices" ref="salesDataService"></property>
+</bean>
+
+</beans>

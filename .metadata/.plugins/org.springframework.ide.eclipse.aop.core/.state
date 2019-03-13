@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="spring_demo-assignment"/>
+<aop-project name="animals-spring-rest-java-test"/>
+<aop-project name="project-spring-rest-java-test1"/>
+<aop-project name="2-shop-account-service"/>
+<aop-project name="flysmart-spring-rest-boot"/>
+<aop-project name="student-data"/>
+<aop-project name="flysmart-spring-mvc-rest"/>
+<aop-project name="spring_demo"/>
+<aop-project name="flysmart-spring-rest-groovy"/>
+<aop-project name="groovy-rest-gorm"/>
+<aop-project name="metlife"/>
+<aop-project name="flysmart-web1"/>
+<aop-project name="flysmart-spring-rest-client"/>
+<aop-project name="account-shop-service"/>
+<aop-project name="spring_demo-lifecycle"/>
+</aop-reference-model>

@@ -1,0 +1,23 @@
+package com.myapp.spring;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
+
+import com.myapp.spring.application.IStudentCommand;
+import com.myapp.spring.config.AppConfig;
+import com.myapp.spring.domain.Student;
+
+public class StudentClient {
+
+	public static void main(String[] args) {
+	AbstractApplicationContext bf = new AnnotationConfigApplicationContext(AppConfig.class);
+	
+	
+	IStudentCommand StudentCommand = bf.getBean(IStudentCommand.class);
+	Student st1= new Student("sinjini",24,"mca");
+	StudentCommand.insert(st1);
+	System.out.println(StudentCommand.findAll());
+	bf.close();
+}
+
+}

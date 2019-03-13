@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Thu Mar 22 17:34:39 IST 2018
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\NikitaGawande\\.m2\\repository\\org\\springframework\\spring-web\\5.0.4.RELEASE\\spring-web-5.0.4.RELEASE.jar=C\:\\sts\\sts-bundle\\pivotal-tc-server-developer-3.2.8.RELEASE\\base-instance\\wtpwebapps\\student-data\\WEB-INF\\lib\\spring-web-5.0.4.RELEASE.jar
+org.eclipse.jst.jee.server\:student-data=C\:\\sts\\sts-bundle\\pivotal-tc-server-developer-3.2.8.RELEASE\\base-instance\\wtpwebapps\\student-data

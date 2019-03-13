@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 packages to &apos;flysmart-web1/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;ibm&apos;&#x0D;&#x0A;- Destination element: &apos;flysmart-web1/src/main/java&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     ibm/src/main/java/com.myapp.spring.application&#x0D;&#x0A;     ibm/src/main/java/com.myapp.spring.dao&#x0D;&#x0A;     ibm/src/main/java/com.myapp.spring.domain&#x0D;&#x0A;     ibm/src/main/java/com.myapp.spring.config" description="Copy packages" destination="=flysmart-web1/src\/main\/java" element1="/src\/main\/java&lt;com.myapp.spring.application" element2="/src\/main\/java&lt;com.myapp.spring.dao" element3="/src\/main\/java&lt;com.myapp.spring.domain" element4="/src\/main\/java&lt;com.myapp.spring.config" flags="589830" fragments="4" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1521103183103" version="1.0"/>
+</session>

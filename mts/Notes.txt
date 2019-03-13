@@ -1,0 +1,33 @@
+
+mts
+
+datasource
+---------------------
+
+SQL 
+	==>H2| derby |HSQL ->in memory databases
+	
+	SCHEMA:MTS.SCHEMA.SQL
+-----------------------------------------------
+
+	Account
+		-num
+		-holdername
+		-balance
+		-type
+		-status
+		
+		
+		
+		
+	Txn
+		--------------------------------------------------
+		
+		
+		
+		Layers(s)
+		
+			1. data/repository layer==>persistence logic
+				- AccountRepository
+				
+			2. business/service
